@@ -5,13 +5,14 @@ import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/render
 const styles = StyleSheet.create({
     page: {
         // flexDirection: 'row',
-        backgroundColor: '#E4E4E4',
+        backgroundColor: '#FFFFFF',
         flexWrap: 'nowrap',
     },
     section: {
-        margin: 10,
-        padding: 10,
-        flexGrow: 1
+        // margin: 10,
+        // padding: 10,
+        // flexGrow: 1
+        zIndex: 0,
     }
     
     
@@ -20,13 +21,10 @@ const styles = StyleSheet.create({
 // Create Document Component
 const Pdf = () => (
     <Document>
-        <Page size="A4" style={styles.page}>
-            <View >
-            
+        <Page size="A4" style={styles.page} pageNumber={1}>
+            <View style={styles.section}>
                 <Image src='./sk_yayasan.jpg'/>
-              
             </View>
-            
         </Page>
     </Document>
 );
