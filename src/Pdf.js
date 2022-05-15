@@ -30,6 +30,16 @@ const styles = StyleSheet.create({
         left: 199,
         top: 267,
     },
+    jnsptk_sk: {
+        position: 'absolute',
+        left: 275,
+        top: 281,
+    },
+    thnajaran_sk: {
+        position: 'absolute',
+        left: 279,
+        top: 295,
+    },
     nama_sk_p1: {
         position: 'absolute',
         left: 295,
@@ -45,10 +55,20 @@ const styles = StyleSheet.create({
         right: 175,
         top: 428,
     },
+    jnsptk_sk_p1: {
+        position: 'absolute',
+        right: 258,
+        top: 428,
+    },
+    jnsptk_sk_p2: {
+        position: 'absolute',
+        right: 150,
+        top: 449,
+    },
     jenjang_sk_p2: {
         position: 'absolute',
-        right: 99,
-        top: 449,
+        left: 155,
+        top: 469,
     },
     tgl_sk_p4: {
         position: 'absolute',
@@ -57,13 +77,19 @@ const styles = StyleSheet.create({
     },
     nama_sk_p4: {
         position: 'absolute',
-        left: 320,
+        left: 300,
+        bottom: 351,
+        fontWeight: 'bold',
+    },
+    jnsptk_sk_p4: {
+        position: 'absolute',
+        right: 90,
         bottom: 351,
         fontWeight: 'bold',
     },
     jenjang_sk_p4: {
         position: 'absolute',
-        left: 139,
+        left: 90,
         bottom: 331,
     },
     
@@ -81,6 +107,12 @@ const Pdf = () => (
                 <Text style={styles.tgl_surat}>
                     19 April 2018
                 </Text>
+                <Text style={styles.jnsptk_sk}>
+                    Guru Tetap
+                </Text>
+                <Text style={styles.thnajaran_sk}>
+                    2021/2022
+                </Text>
                 <Text style={styles.nama_sk}>
                     Desy Sri Asih, S.Pd
                 </Text>
@@ -90,8 +122,14 @@ const Pdf = () => (
                 <Text style={styles.tgl_kesanggupan_p1}>
                     28 Juni 2018
                 </Text>
+                <Text style={styles.jnsptk_sk_p1}>
+                    Guru Tetap
+                </Text>
                 <Text style={styles.jenjang_sk_p1}>
                     MA Nurul Huda
+                </Text>
+                <Text style={styles.jnsptk_sk_p2}>
+                    Guru Tetap 
                 </Text>
                 <Text style={styles.jenjang_sk_p2}>
                     MA Nurul Huda
@@ -101,6 +139,9 @@ const Pdf = () => (
                 </Text>
                 <Text style={styles.nama_sk_p4}>
                     Desy Sri Asih, S.Pd
+                </Text>
+                <Text style={styles.jnsptk_sk_p4}>
+                    Guru Tetap
                 </Text>
                 <Text style={styles.jenjang_sk_p4}>
                     MA Nurul Huda
